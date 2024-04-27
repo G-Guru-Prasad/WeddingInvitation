@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body{
+    margin: 0;
+}
+
+#homeBackground{
+    background-image: url(C:/Users/pc/Documents/Website//images/Sample2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#homeBackground .backgroundTint{
+    background-color: #595506c4;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#homeBackground .backgroundTint .centerText {
+    text-align: center;
+}
+
+#homeBackground .backgroundTint .centerText .titleText{
+    font-size: 35px;
+    color : #eee;
+    font-family: 'Macondo', cursive;
+    padding-bottom : 60px;
+}
+
+#homeBackground .backgroundTint .centerText .mainText{
+    font-family: 'Kalam', cursive;
+    color: #fff;
+    font-size: 7em;
+    line-height: 1;
+    margin : 0 20px;
+}
+
+#homeBackground .backgroundTint .centerText .subtitleText{
+    font-size: 35px;
+    color : #eee;
+    font-family: 'Macondo', cursive;
+    padding-top : 50px;
+}
+
+@media only screen and (max-width: 500px) {
+    #countDown .d-flex{
+        display : block !important;
+    }
+    #countDown .timeValue{
+        display: block !important;
+    }
+    #countDown{
+        height: 100vh !important;
+    }
+    #countDown #Remaining{
+        margin: 25px;
+    }
+}
+
+#countDown .timeValue{
+    text-align: center;
+    font-size: 30px;
+    padding : 20px;
+    display: inline-block;
+}
+
+#countDown{
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#countDown .timeValue .value{
+    font-size: 65px;
+    font-family: 'Josefin Sans', sans-serif;
+    display: block;
+    color : #d42300;
+}
+
+#countDown .timeValue .title{
+    font-size: 23px;
+    display: block;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#countDown #Remaining{
+    display: block;
+    color : #333333;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#countDown .d-flex{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Set the size of the div element that contains the map */
+#mapSection{
+    display: flex;
+    height: 50vh;
+}
+
+#mapSection #map {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#mapSection #mapDiv{
+    margin : 20px;
+}
+
+#mapSection .p50{
+    width : 50vw;
+    display : inline;
+}
+
+#mapSection #addressDiv{
+    margin : 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+#mapSection #addressDiv h1{
+    color: #d42300;
+}
+
+#mapSection #addressDiv h2{
+    line-height: 1;
+    margin: 12px;
+}
+
+#mapSection #addressDiv h2:last-of-type{
+    margin-bottom: 40px;
+}
+
+#mapSection #addressDiv a{
+    text-decoration: none;
+    font-size: 20px;
+    vertical-align: middle;
+    background-color: #d42300;
+    color: #eee;
+    padding : 13px 25px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#mapSection #addressDiv a .icon{
+    vertical-align: sub;
+}
+
+
+@media only screen and (max-width: 815px) {
+    #mapSection #addressDiv h1{
+        margin-top: 0;
+    }
+    #mapSection{
+        display: block;
+        height: 100vh;
+        
+    }
+    #mapSection #map {
+        height: calc(50% - 60px);
+        width: calc(100% - 60px);
+        border-radius: 20px;
+        margin : 30px;
+        box-sizing: border-box;
+    }
+    #mapSection #addressDiv{
+        text-align: center;
+        margin: auto;    
+        display: block;
+    }
+    #mapSection .p50{
+        width : 100%;
+    }
+    #mapSection #addressDiv a{
+        margin-bottom: 20px;
+    }
+}
