@@ -9,7 +9,7 @@ body{
 }
 
 #homeBackground{
-    background-image: url(images\Sample1.png);
+    background-image: url(images/Sample1.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
